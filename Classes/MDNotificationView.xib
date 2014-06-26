@@ -11,18 +11,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgh-9w-yCQ">
-                    <rect key="frame" x="36" y="8" width="279" height="15"/>
+                    <rect key="frame" x="35" y="8" width="280" height="15"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sFQ-bd-dEO">
-                    <rect key="frame" x="1" y="1" width="30" height="30"/>
+                    <rect key="frame" x="2" y="2" width="28" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="7R2-9e-MHZ"/>
-                        <constraint firstAttribute="width" constant="30" id="sKy-Z1-bMF"/>
+                        <constraint firstAttribute="height" constant="28" id="7R2-9e-MHZ"/>
+                        <constraint firstAttribute="width" constant="28" id="sKy-Z1-bMF"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -31,12 +31,13 @@
                 <constraint firstAttribute="centerY" secondItem="jgh-9w-yCQ" secondAttribute="centerY" id="61F-ac-kde"/>
                 <constraint firstAttribute="trailing" secondItem="jgh-9w-yCQ" secondAttribute="trailing" constant="5" id="Gm0-c9-nBq"/>
                 <constraint firstAttribute="centerY" secondItem="sFQ-bd-dEO" secondAttribute="centerY" id="U17-Ih-YNs"/>
-                <constraint firstItem="sFQ-bd-dEO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="fI0-jc-vcf"/>
+                <constraint firstItem="sFQ-bd-dEO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="fI0-jc-vcf"/>
                 <constraint firstItem="jgh-9w-yCQ" firstAttribute="leading" secondItem="sFQ-bd-dEO" secondAttribute="trailing" constant="5" id="s2I-qh-lqY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="_body_txt" destination="jgh-9w-yCQ" id="RIW-Uy-3PD"/>
+                <outlet property="_image_iv" destination="sFQ-bd-dEO" id="Kfa-Qd-Ntw"/>
             </connections>
         </view>
     </objects>
