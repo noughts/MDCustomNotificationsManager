@@ -135,7 +135,10 @@ static UIColor *kMessageTextColour = nil;
 
 
 + (void)displayNotificationWithMDNotificationMessage:(MDNotificationMessage *)notificationMessage {
-    
+    if( [MDCustomNotificationsManager sharedInstance].messagesQueueArray.count > 2 ){
+		// たくさんの登録を防ぐ
+		return;
+	}
     [[MDCustomNotificationsManager sharedInstance].messagesQueueArray addObject:notificationMessage];
     if ([[MDCustomNotificationsManager sharedInstance].messagesQueueArray count] == 1) [[MDCustomNotificationsManager sharedInstance] startPresentionProcess];
 }
