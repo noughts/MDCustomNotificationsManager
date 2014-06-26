@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MDNotificationMessage;
 
 @interface MDNotificationView : UIView
 
-//- (id)initWithNotificationMessage:(MDNotificationMessage *)notificationMessage;
+-(id)initWithNotificationMessage:(MDNotificationMessage*)notificationMessage;
 
 @end

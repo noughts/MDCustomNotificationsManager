@@ -32,9 +32,7 @@ static UIColor *kMessageTextColour = nil;
     
     if (notificationMessage.displayingSeconds) self.displayingSeconds = notificationMessage.displayingSeconds;
     
-//    self.notificationView = [[MDNotificationView alloc] initWithNotificationMessage:notificationMessage];
-	UINib* nib = [UINib nibWithNibName:@"MDNotificationView" bundle:nil];
-	self.notificationView = [nib instantiateWithOwner:self options:nil][0];
+	self.notificationView = [[MDNotificationView alloc] initWithNotificationMessage:notificationMessage];
     
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handlePressAndHoldGesture:)];
     longPress.minimumPressDuration = 0.01;
