@@ -11,6 +11,8 @@
 
 @interface MDNotificationView : UIView
 
+@property(nonatomic) MDNotificationMessage* notificationMessage;
+
 -(id)initWithNotificationMessage:(MDNotificationMessage*)notificationMessage;
 
 @end

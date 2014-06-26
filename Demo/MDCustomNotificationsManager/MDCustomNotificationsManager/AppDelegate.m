@@ -7,14 +7,43 @@
 //
 
 #import "AppDelegate.h"
+#import "MDCustomNotificationsManager.h"
+#import "MDNotificationView.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	
+	// アプリ内通知のタップを監視
+	[[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(tapReceivedNotificationHandler:)
+                                                 name:@"kMPNotificationViewTapReceivedNotification"
+                                               object:nil];
+	
     return YES;
 }
+
+
+
+
+/// アプリ内通知をタップした時に呼ばれる
+- (void)tapReceivedNotificationHandler:(NSNotification *)notification{
+//	NSLog( @"%@", notification );
+	MDNotificationView* notificationView = notification.object;
+	NSLog( @"%@", notificationView.notificationMessage );
+	NSLog( @"%@", notificationView.notificationMessage.message );
+}
+
+
+
+
+
+
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

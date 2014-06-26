@@ -27,6 +27,7 @@ static float kNotificationBackgroundAlpha = 0.9;
 @implementation MDNotificationView{
 	__weak IBOutlet UILabel* _body_txt;
 	__weak IBOutlet UIImageView* _image_iv;
+	MDNotificationMessage* _notificationMessage;
 }
 
 
@@ -36,6 +37,7 @@ static float kNotificationBackgroundAlpha = 0.9;
         UINib *nib = [UINib nibWithNibName:@"MDNotificationView" bundle:nil];
         self = [nib instantiateWithOwner:nil options:nil][0];
 		
+		_notificationMessage = notificationMessage;
 		_body_txt.text = notificationMessage.message;
 		_image_iv.image = notificationMessage.iconImage;
     }

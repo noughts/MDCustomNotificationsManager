@@ -39,6 +39,7 @@ typedef void(^ButtonActionBlock)(void);
 
 @interface MDNotificationMessage : NSObject
 
+@property (nonatomic, strong) NSString *uid;// unique id for identify
 @property (nonatomic, strong) NSString *message;
 @property (nonatomic, assign) MDCustomNotificationType notificationType;
 @property (nonatomic, copy) ActionCompletionBlock actionCompletionBlock;
@@ -47,6 +48,7 @@ typedef void(^ButtonActionBlock)(void);
 @property (nonatomic, assign) float displayingSeconds;
 @property (nonatomic, strong) UIImage *iconImage;
 @property (nonatomic, strong) UIColor *backgroundColour;
+
 
 @end
 

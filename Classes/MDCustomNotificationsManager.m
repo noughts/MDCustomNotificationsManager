@@ -96,6 +96,7 @@ static UIColor *kMessageTextColour = nil;
         
     } else  if (pressAndHold.state == UIGestureRecognizerStateEnded) {
         [self dismissNotification:nil];
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"kMPNotificationViewTapReceivedNotification" object:self.notificationView];
     }
 }
 
