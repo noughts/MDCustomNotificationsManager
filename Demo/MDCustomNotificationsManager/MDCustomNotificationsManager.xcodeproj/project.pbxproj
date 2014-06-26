@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D05AC33195C224200905146 /* MDNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D05AC32195C224200905146 /* MDNotificationView.m */; };
+		4D05AC35195C231D00905146 /* MDNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D05AC34195C231D00905146 /* MDNotificationView.xib */; };
 		9B36BCE918ACD32A00FF04E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36BCE818ACD32A00FF04E8 /* Foundation.framework */; };
 		9B36BCEB18ACD32A00FF04E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36BCEA18ACD32A00FF04E8 /* CoreGraphics.framework */; };
 		9B36BCED18ACD32A00FF04E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36BCEC18ACD32A00FF04E8 /* UIKit.framework */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D05AC31195C224200905146 /* MDNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDNotificationView.h; sourceTree = "<group>"; };
+		4D05AC32195C224200905146 /* MDNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDNotificationView.m; sourceTree = "<group>"; };
+		4D05AC34195C231D00905146 /* MDNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDNotificationView.xib; sourceTree = "<group>"; };
 		9B36BCE518ACD32A00FF04E8 /* MDCustomNotificationsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDCustomNotificationsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B36BCE818ACD32A00FF04E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B36BCEA18ACD32A00FF04E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,6 +175,9 @@
 				9B36BD1E18ACD38E00FF04E8 /* icons */,
 				9B36BD2218ACD38E00FF04E8 /* MDCustomNotificationsManager.h */,
 				9B36BD2318ACD38E00FF04E8 /* MDCustomNotificationsManager.m */,
+				4D05AC31195C224200905146 /* MDNotificationView.h */,
+				4D05AC32195C224200905146 /* MDNotificationView.m */,
+				4D05AC34195C231D00905146 /* MDNotificationView.xib */,
 			);
 			name = Classes;
 			path = ../../../Classes;
@@ -264,6 +272,7 @@
 			files = (
 				9B36BD0118ACD32A00FF04E8 /* Images.xcassets in Resources */,
 				9B36BD2518ACD38E00FF04E8 /* icon-info.png in Resources */,
+				4D05AC35195C231D00905146 /* MDNotificationView.xib in Resources */,
 				9B36BD2918ACEE2A00FF04E8 /* icon-warning.png in Resources */,
 				9B36BD2618ACD38E00FF04E8 /* icon-success.png in Resources */,
 				9B36BD2418ACD38E00FF04E8 /* icon-error.png in Resources */,
@@ -291,6 +300,7 @@
 				9B36BCF918ACD32A00FF04E8 /* AppDelegate.m in Sources */,
 				9B36BD2718ACD38E00FF04E8 /* MDCustomNotificationsManager.m in Sources */,
 				9B36BCF518ACD32A00FF04E8 /* main.m in Sources */,
+				4D05AC33195C224200905146 /* MDNotificationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

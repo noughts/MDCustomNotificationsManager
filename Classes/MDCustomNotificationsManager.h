@@ -50,10 +50,3 @@ typedef void(^ButtonActionBlock)(void);
 
 @end
 
-
-
-@interface MDNotificationView : UIView
-
-- (id)initWithNotificationMessage:(MDNotificationMessage *)notificationMessage;
-
-@end
