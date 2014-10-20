@@ -40,6 +40,7 @@ static float kNotificationBackgroundAlpha = 0.9;
 		_notificationMessage = notificationMessage;
 		_body_txt.text = notificationMessage.message;
 		_image_iv.image = notificationMessage.iconImage;
+		self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 32);
     }
     return self;
 }
